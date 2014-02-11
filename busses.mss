@@ -2,7 +2,8 @@
 
 // Buff Bus
 #buff{
-  line-color: #CFB87C;
+  //line-color: #CFB87C;
+  line-color: #72578f;
   line-width: 4;
   ::labels{
     text-face-name:@font_reg;
@@ -44,3 +45,12 @@
   } 
 }
    
+
+
+#rtd-stops {
+  [zoom <= 15] {}
+  [zoom = 16] {point-file: url(res/maki/renders/bus-12.png);}
+  [zoom >= 17] {point-file: url(res/maki/renders/bus-18.png);} 
+  [zoom >= 19] {point-file: url(res/maki/renders/bus-24.png);}
+  //marker-allow-overlap:true;
+}
